@@ -437,7 +437,7 @@ Zero overhead on the serial framing path. Direct Win32 API access. No JVM or GIL
 
 ## License
 
-[Your License Here]
+Currently "Closed License".
 
 ## References
 
@@ -446,4 +446,5 @@ Zero overhead on the serial framing path. Direct Win32 API access. No JVM or GIL
 - [llama.cpp Server](https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md)
 - [STM32 USB CDC driver](https://www.st.com/en/development-tools/stsw-stm32102.html)
 - [Qt 6 CMake](https://doc.qt.io/qt-6/cmake-get-started.html)
+
 - [OpenCV](https://docs.opencv.org/)
