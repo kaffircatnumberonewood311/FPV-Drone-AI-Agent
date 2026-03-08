@@ -73,26 +73,6 @@ If no VID/PID match is found, falls back to sending an `NHAWK?` handshake on eve
 - CMake 3.26+, C++20 compiler (MinGW-w64 or MSVC)
 - Optional for GUI: Qt 6.5+, OpenCV 4.8+, libcurl 7.85+
 
-### CLI Build
-
-``powershell
-cmake --preset ci
-cmake --build --preset ci
-
-# Verify drone detection (plug in drone first)
-.\build\ci\nanohawk_device_detection.exe
-
-# Run a mission prompt
-.\build\ci\nanohawk_agent_cli.exe "Takeoff to one meter, hover three seconds, land"
-``
-
-### GUI Build
-
-``powershell
-cmake --preset dev
-cmake --build --preset dev
-.\build\dev\nanohawk_agent.exe
-`
 
 ## Troubleshooting
 
@@ -159,6 +139,7 @@ This GitHub Repository is not currently sponsored by Emax USA - https://emax-usa
 - [Qt 6 CMake](https://doc.qt.io/qt-6/cmake-get-started.html)
 
 - [OpenCV](https://docs.opencv.org/)
+
 
 
 
