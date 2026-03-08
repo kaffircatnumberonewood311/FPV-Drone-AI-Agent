@@ -21,13 +21,11 @@ EMAX Nanohawk 1S -- https://emax-usa.com/products/nanohawk-1s-ultralight-brushle
 | FPV Camera | Analog + 5.8 GHz VTX (desktop capture via USB dongle) |
 | Connection | USB-C to laptop (COM3) -- confirmed working |
 
----
 
 # Workflow Diagram
 <img width="2547" height="1422" alt="nanohawk_nl_agent_workflow" src="https://github.com/user-attachments/assets/43b41436-651b-4aa8-ac1d-ae5ac9cc0a6d" />
 
-```
-```
+
 ## System Architecture
 
 +---------------------------------------------------------+
@@ -73,19 +71,16 @@ EMAX Nanohawk 1S -- https://emax-usa.com/products/nanohawk-1s-ultralight-brushle
 |  4-in-1 ESC -> 4 x 0802 brushless motors               |
 |  FPV Camera -> analog + 5.8 GHz VTX                     |
 +---------------------------------------------------------+
-```
-
----
-
+``
 ## MSP Protocol
 
 The agent communicates with the Betaflight FC using **MSP V1** (MultiWii Serial Protocol):
 
-```
+``
 Request : '$' 'M' '<' <size:u8> <cmd:u8> [payload] <checksum:u8>
 Response: '$' 'M' '>' <size:u8> <cmd:u8> [payload] <checksum:u8>
 Checksum: XOR of size ^ cmd ^ payload[0] ^ ... ^ payload[n-1]
-```
+`
 
 ### Commands Used
 
@@ -144,7 +139,7 @@ If no VID/PID match is found, falls back to sending an `NHAWK?` handshake on eve
 
 ### Confirmed Detection Output
 
-```
+``
 === Nanohawk Device Detection ===
 
 [1/2] WiFi UDP broadcast (1 s timeout)...
@@ -168,13 +163,11 @@ If no VID/PID match is found, falls back to sending an `NHAWK?` handshake on eve
                (roll  pitch  thr   yaw   arm   aux2  aux3  aux4)
 
 Drone detected and MSP telemetry verified. Agent ready.
-```
-
----
+``
 
 ## Data Flow: Prompt to Flight
 
-```
+``
 1. Operator types natural-language prompt in GUI
    |
 2. LlmClient sends prompt to local llama.cpp (http://127.0.0.1:8080/v1)
@@ -217,9 +210,7 @@ Drone detected and MSP telemetry verified. Agent ready.
     readAnalog()   -> battery V, mAh consumed, current
     readRc()       -> live RC channel echo
     GUI updates FPV video and telemetry panes in real-time
-```
-
----
+``
 
 ## Safety Architecture
 
@@ -238,7 +229,7 @@ Drone detected and MSP telemetry verified. Agent ready.
 
 ## Project Layout
 
-```
+`
 D:\DroneAI\
 +-- betaflight-master\         # Betaflight firmware (GPL-3.0, MSP reference)
 +-- llama.cpp\                 # Local LLM runtime (OpenAI-compatible HTTP)
@@ -308,15 +299,13 @@ D:\DroneAI\
     +-- test\unit\
         +-- test_device_detection.cpp  # Detect + full MSP session (BTFL confirmed)
         +-- test_pipeline.cpp / test_transports.cpp / test_config_wiring.cpp
-```
 
----
 
 ## Configuration
 
 `config\endpoints.yaml`:
 
-```yaml
+``yaml
 mavlink:
   serial_port: COM3       # Betaflight FC USB port (auto-detected)
   serial_baud: 115200     # MSP baud rate
@@ -332,7 +321,7 @@ llm:
 
 video:
   uvc_index: 0            # USB FPV capture device
-```
+``
 
 ---
 
@@ -346,7 +335,7 @@ video:
 
 ### CLI Build
 
-```powershell
+``powershell
 cmake --preset ci
 cmake --build --preset ci
 
@@ -355,37 +344,37 @@ cmake --build --preset ci
 
 # Run a mission prompt
 .\build\ci\nanohawk_agent_cli.exe "Takeoff to one meter, hover three seconds, land"
-```
+``
 
 ### GUI Build
 
-```powershell
+``powershell
 cmake --preset dev
 cmake --build --preset dev
 .\build\dev\nanohawk_agent.exe
-```
+`
 
 ### Full Runtime
 
-```powershell
+``powershell
 # Terminal 1: local LLM
 llama-server.exe -m models\llm\your-model.gguf --port 8080
 
 # Terminal 2: agent (auto-detects COM3)
 .\build\dev\nanohawk_agent.exe
-```
+``
 
 ---
 
 ## Testing
 
-```powershell
+``powershell
 # Device detection + live MSP session
 .\build\dev\nanohawk_device_detection.exe
 
 # All unit tests
 ctest --preset ci
-```
+``
 
 ---
 
@@ -454,6 +443,7 @@ This GitHub Repository is not currently sponsored by Emax USA - https://emax-usa
 - [Qt 6 CMake](https://doc.qt.io/qt-6/cmake-get-started.html)
 
 - [OpenCV](https://docs.opencv.org/)
+
 
 
 
